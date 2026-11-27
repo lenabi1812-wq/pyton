@@ -10,6 +10,11 @@
     </style>
 </head>
 <body>
+
+    <p>
+        <a href="/events/new">Добавить мероприятие</a>
+    </p>
+
     <h1>Панель мероприятий клуба будущего</h1>
     <p>Выберите интересное занятие и запишитесь в клубе.</p>
 
@@ -18,7 +23,7 @@
             <tr>
                 <th>№</th>
                 <th>Мероприятие</th>
-                <th>Направление</th> <!-- Это новый столбец -->
+                <th>Направление</th>
                 <th>Места</th>
                 <th>Статус</th>
             </tr>
@@ -28,12 +33,13 @@
             <tr>
                 <td>{{ event.id }}</td>
                 <td>{{ event.title }}</td>
-                <td>{{ event.direction }}</td> <!-- Вывод направления -->
+                <td>{{ event.direction }}</td>
                 <td>{{ event.seats }}</td>
                 <td>{{ event.status }}</td>
             </tr>
             {% endfor %}
         </tbody>
     </table>
+
 </body>
 </html>
